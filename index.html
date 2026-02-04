@@ -1,11 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>汩汩的网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【爱尚衣橱】 | 专属你的时尚风格</title>
+    <meta name="description" content="【位于[湖北省荆州市公安县埠河镇]的高品质女装店，专注于提供优雅、舒适的日常与场合着装。】">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 这里放你原来的段落代码 -->
-    <p>汩汩的名字叫汩汩</p>
+    <!-- 导航栏 - Apple风格 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="assets/logo.png" alt="【店铺名称】Logo" height="28"> 【店铺名称】
+            </a>
+            <nav class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#new-arrivals">新品</a>
+                <a href="#collections">系列</a>
+                <a href="#about">关于我们</a>
+                <a href="#contact">联系</a>
+            </nav>
+            <div class="nav-contact">
+                <i class="fas fa-phone"></i> <span class="desktop-only">【联系电话:181-8656-3598】</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主页大图Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background" style="background-image: url('assets/hero-bg.jpg');"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">新季风格</h1>
+            <h2 class="hero-subtitle">焕新衣橱，定义你的优雅日常</h2>
+            <a href="#new-arrivals" class="btn btn-hero">探索新品 <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- 新品推荐 -->
+    <section id="new-arrivals" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>新品推荐</h2>
+                <p>发现本季最受瞩目的精选款式</p>
+            </div>
+            <div class="products-grid">
+                <!-- 产品1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/product-1.jpg" alt="【福利商品】" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>【一件打底衫】</h3>
+                        <p>【需要的快点来，你可以微信我留货】</p>
+                        <span class="price">【价格，仅需¥50】</span>
+                    </div>
+                </div>
+                <!-- 产品2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/product-2.jpg" alt="【活力商品】" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>【羽绒服】</h3>
+                        <p>【喜欢的快来捡漏】</p>
+                        <span class="price">【¥300】</span>
+                    </div>
+                </div>
+                <!-- 产品3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/product-3.jpg" alt="【进阶商品】" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>【加厚款羽绒服】</h3>
+                        <p>【喜欢的快来捡漏】</p>
+                        <span class="price">【¥380】</span>
+                    </div>
+                </div>
+                <!-- 产品4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/product-4.jpg" alt="【百搭商品】" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>【牛仔裤】</h3>
+                        <p>【超级百搭，喜欢的快来啊】</p>
+                        <span class="price">【¥130】</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌理念 -->
+    <section id="about" class="section bg-dark">
+        <div class="container">
+            <div class="about-content">
+                <h2>关于【爱尚衣橱】</h2>
+                <p>【自2014年成立于[湖北省荆州市公安县埠河镇]，我们始终致力于为现代女性寻找兼具设计感与穿着体验的服装。我们相信，好的服装是内在自信的外在表达。】</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <h4>精选面料</h4>
+                        <p>严格筛选舒适、环保的高品质面料</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-cut"></i>
+                        <h4>匠心工艺</h4>
+                        <p>注重细节与剪裁，打造合身版型</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h4>专属服务</h4>
+                        <p>提供个性化的搭配建议</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系与地图 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>光临门店</h2>
+                <p>欢迎亲临体验，发现更多惊喜</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3><i class="fas fa-store"></i> 店铺信息</h3>
+                    <p><strong>地址：</strong>【湖北省荆州市公安县埠河镇振兴路蜜雪冰城斜对面】</p>
+                    <p><strong>电话：</strong><a href="tel:【电话号码】">【18186563598】</a></p>
+                    <p><strong>营业时间：</strong><br>
+                        周一至周日：【时间，如：10:00 - 20:00】<br>
+                    </p>
+                    <hr>
+                    <p class="tip">💡 到店前建议提前致电，获取最新款式信息。</p>
+                </div>
+                <div class="map-container">
+                    <!-- 高德地图容器 -->
+                    <!-- 替换开始：这是交互式地图容器 -->
+<div id="map-container"></div>
+<!-- 替换结束 -->
+
+<!-- 以下是加载高德地图JSAPI和初始化地图的脚本，请放在页面底部 </body> 标签之前，如果你已有一个main.js文件，可以整合进去 -->
+<script src="https://webapi.amap.com/maps?v=2.0&key=413d947fbb12a4300c3cb89db4ebc0fe"></script>
+<script>
+    // 初始化地图
+    var map = new AMap.Map('map-container', {
+        zoom: 16, // 缩放级别，15-17比较适合看店铺
+        center: [112.240381,30.288174],//
+        viewMode: '2D', // 使用2D地图
+        resizeEnable: true // 允许自适应调整
+    });
+
+    // 在地图中心添加一个标记点
+    var marker = new AMap.Marker({
+        position: map.getCenter(), // 标记放在地图中心
+        title: '爱尚衣橱' // 鼠标悬停时显示的名称
+    });
+    marker.setMap(map);
+
+    // 可选：添加一个信息窗口，点击标记时显示
+    var infoWindow = new AMap.InfoWindow({
+        content: '<div style="padding:5px;"><strong>爱尚衣橱</strong><br>欢迎光临！</div>', // 信息窗口内容
+        offset: new AMap.Pixel(0, -30) // 信息窗口的偏移
+    });
+    // 点击标记时打开信息窗口
+    marker.on('click', function() {
+        infoWindow.open(map, marker.getPosition());
+    });
+</script>
+                        <p>地图加载中...</p>
+                        <!-- 第1步：在此处嵌入高德地图（见下方说明） -->
+                    </div>
+                    <p class="map-note">
+                        <i class="fas fa-map-marker-alt"></i> 在高德地图APP搜索“<strong>【爱尚衣橱】</strong>”即可导航至门店。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="currentYear"></span> 【爱尚衣橱】. 保留所有权利。</p>
+            <p>网站由儿子倾心制作 ❤️</p>
+            <p class="footer-links">
+                <a href="#home">首页</a> | 
+                <a href="#contact">联系</a> |
+                <!-- 未来可以添加隐私政策等 -->
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
